@@ -52,7 +52,7 @@
     address{text-align: left;}
     form { max-width: 80%; margin: 20px auto; padding: 30px;background-color: white; border-radius: 8px; 
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); position: relative;width: 100%;border:1px solid #e70101;}
-    h4{padding-left: 55px;}
+    form:hover{border-color: rgb(224, 137, 22);}
  
 </style>
 </head>
@@ -157,16 +157,17 @@
         </script>
 </section><br>
 <section id="Бүртгүүлэх">
-    <h4>Бүртгүүлэх:</h4>
-    <form>
+    <form action="/action_page.php">
+        <fieldset>
+     <legend>Бүртгэл:</legend>
         <label for="name">Нэр:</label>
         <input type="text" id="name" name="name" required>
         <label for="email">И-Майл:</label>
         <input type="email" id="email" name="email" required>
         <label for="phone">Утас:</label>
-        <input type="tel" id="phone" name="phone" placeholder="12-34-56-78">
-        <input type="submit"  value="Илгээх">
-    </form></section>
+        <input type="tel" id="phone" name="phone" placeholder="1234-5678">
+        <input type="submit"  value="Илгээх"></form></fieldset>
+    </section>  
     <section id="audio">
         <audio controls>
             <source src="funky-burger-138616.mp3" type="audio/mp3">
@@ -174,7 +175,7 @@
     </section>
 <footer>
     <address>
-        <table style="width: 50%;">
+        <table style="width: 40%;">
             <tr><th>Бидэнтэй холбоо барих бол:</th>
             <th>Хаяг:</th></tr>
         <tr>
